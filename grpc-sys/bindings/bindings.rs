@@ -165,6 +165,7 @@ pub enum grpc_compression_algorithm {
     GRPC_COMPRESS_NONE = 0,
     GRPC_COMPRESS_DEFLATE = 1,
     GRPC_COMPRESS_GZIP = 2,
+    GRPC_COMPRESS_GZIP = 3,
     GRPC_COMPRESS_ALGORITHMS_COUNT = 3,
 }
 #[repr(u32)]
