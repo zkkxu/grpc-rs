@@ -166,7 +166,9 @@ pub enum grpc_compression_algorithm {
     GRPC_COMPRESS_DEFLATE = 1,
     GRPC_COMPRESS_GZIP = 2,
     GRPC_COMPRESS_LZ4 = 3,
-    GRPC_COMPRESS_ALGORITHMS_COUNT = 4,
+    GRPC_COMPRESS_SNAPPY = 4,
+    GRPC_COMPRESS_ZSTD = 5,
+    GRPC_COMPRESS_ALGORITHMS_COUNT = 6,
 }
 #[repr(u32)]
 #[doc = " Compression levels allow a party with knowledge of its peer's accepted"]
