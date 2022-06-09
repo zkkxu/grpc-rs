@@ -5,6 +5,10 @@ pub const GRPC_COMPRESSION_REQUEST_ALGORITHM_MD_KEY: &[u8; 31usize] =
     b"grpc-internal-encoding-request\0";
 pub const GRPC_COMPRESSION_CHANNEL_DEFAULT_ALGORITHM: &[u8; 35usize] =
     b"grpc.default_compression_algorithm\0";
+pub const GRPC_GZIP_COMPRESSION_LEVEL: &[u8; 28usize] =
+    b"grpc.gzip_compression_level\0";
+pub const GRPC_COMPRESSION_LOWER_BOUND: &[u8; 29usize] =
+    b"grpc.compression_lower_bound\0";
 pub const GRPC_COMPRESSION_CHANNEL_DEFAULT_LEVEL: &[u8; 31usize] =
     b"grpc.default_compression_level\0";
 pub const GRPC_COMPRESSION_CHANNEL_ENABLED_ALGORITHMS_BITSET: &[u8; 43usize] =
