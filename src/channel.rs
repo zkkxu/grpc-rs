@@ -315,7 +315,7 @@ impl ChannelBuilder {
     }
 
     /// Set default gzip compression level.
-    pub fn default_gzip_compression_level(mut self, level: i32) -> ChannelBuilder {
+    pub fn default_gzip_compression_level(mut self, level: usize) -> ChannelBuilder {
         self.options.insert(
             Cow::Borrowed(grpcio_sys::GRPC_GZIP_COMPRESSION_LEVEL),
             Options::Integer(level as i32),
@@ -324,7 +324,7 @@ impl ChannelBuilder {
     }
 
     /// Set default compression lower bound.
-    pub fn default_compression_lower_bound(mut self, lowerBound: i32) -> ChannelBuilder {
+    pub fn default_compression_lower_bound(mut self, lowerBound: usize) -> ChannelBuilder {
         self.options.insert(
             Cow::Borrowed(grpcio_sys::GRPC_COMPRESSION_LOWER_BOUND),
             Options::Integer(lowerBound as i32),
